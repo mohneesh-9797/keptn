@@ -332,7 +332,7 @@ jobs:
     - echo "$REGISTRY_PASSWORD" | docker login --username $REGISTRY_USER --password-stdin
     - ./writeManifest.sh
     - cat MANIFEST
-    - source ./travis-scripts/build_develop.sh "${API_IMAGE}" "${API_FOLDER}" "${GIT_SHA}" "${DATE}"
+   # - source ./travis-scripts/build_develop.sh "${API_IMAGE}" "${API_FOLDER}" "${GIT_SHA}" "${DATE}"
     - source ./travis-scripts/build_develop.sh "${OS_ROUTE_SVC_IMAGE}" "${OS_ROUTE_SVC_FOLDER}" "${GIT_SHA}" "${DATE}"
     - source ./travis-scripts/build_develop.sh "${BRIDGE_IMAGE}" "${BRIDGE_FOLDER}" "${GIT_SHA}" "${DATE}"
     - source ./travis-scripts/build_develop.sh "${JMETER_SVC_IMAGE}" "${JMETER_SVC_FOLDER}" "${GIT_SHA}" "${DATE}"

@@ -114,7 +114,7 @@ gke_full: &gke_full
     - test/utils/check_bridge_availability.sh
     # test onboarding and new-artifact for project sockshop
     - export PROJECT=sockshop
-	- export SERVICE=carts
+    - export SERVICE=carts
     - test/test_onboard_service.sh
     - test/test_new_artifact.sh
     - test/test_delete_project.sh
